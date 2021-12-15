@@ -25,7 +25,6 @@ nav a {
 .nav-btn {
     padding: 0.3rem 0.8rem;
     color: #212667;
-    /* border: 1px solid #212667; */
     border: 3px solid; 
     border-image-slice: 1; 
     border-image-source: linear-gradient(to left, #743ad5, #d53a9d); 
@@ -42,22 +41,13 @@ nav a {
 
 .current {
     padding: 0.2rem 0.8rem;
-    /* border-image-source: linear-gradient(to left, #eac3f8, #fb5); */
-    /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
     border-bottom: 3px solid; 
     border-image-slice: 1; 
     border-image-source: linear-gradient(to left, #743ad5, #d53a9d); 
     border-radius: 5px;
 }
 
-/* .border-gradient {
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-} */
-
 .container {
-    /* width: 100%; */
     min-height: 100vh;
     padding: 0 1rem;
     overflow: hidden;
@@ -67,6 +57,7 @@ nav a {
     display: flex;
 }
 
+/* container right */
 .right-container {
     width: 30vw;
     display: flex;
@@ -76,16 +67,6 @@ nav a {
     padding: 1rem;
     position: relative;
 }
-
-/* .right-container::after {
-    content: '';
-    width: 10px;
-    height: 25%;
-    position: absolute;
-    top: 8.3rem;
-    left: -15px;
-    background: linear-gradient(#eac3f8, #fb5);
-} */
 
 .right-container h2 {
     padding-bottom: 2rem;
@@ -97,9 +78,8 @@ nav a {
     color: #333;
 }
 
-
+/* container left */
 .left-container {
-    /* width: 70vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,11 +111,9 @@ nav a {
 
 .add-box {
     color: #4c246d;
-    /* color: #fcfefb; */
 }
 
-
-
+/* general */
 button {
     width: 140px;
     height: 50px;
@@ -189,8 +167,7 @@ button:hover {
 }
 
 .add-icon:hover {
-    color: #ccc;
-    background-color: #333;
+    transform: scale(1.2, 1.2);
 }
 
 .add-icon p {
@@ -199,7 +176,7 @@ button:hover {
 }
 
 .add-icon p:hover {
-    color: #ccc;
+    color: inherit;
 }
 
 #add-icon-info {
@@ -273,5 +250,3 @@ button:hover {
         margin-left: 0;
     }
 }
-
-
